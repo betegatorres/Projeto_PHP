@@ -1,0 +1,73 @@
+/* Estilos responsivos para telas menores */
+* {
+    box-sizing: border-box;
+}
+
+header nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 18px;
+}
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 24px 20px 40px;
+}
+
+form {
+    max-width: 420px;
+    background-color: white;
+    padding: 24px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    margin-top: 20px;
+}
+
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    min-width: 700px;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 14px 16px;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    header nav {
+        gap: 8px 12px;
+    }
+
+    main {
+        padding: 20px 16px 32px;
+    }
+
+    form {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    header nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    form {
+        padding: 18px 14px;
+    }
+}
