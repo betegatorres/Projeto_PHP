@@ -48,7 +48,6 @@
     }
 
     table td:last-child {
-        white-space: normal;
         min-width: 88px;
     }
 

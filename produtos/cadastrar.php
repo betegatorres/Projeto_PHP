@@ -37,7 +37,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 <main>
 
-    <h2>Cadastrar Prouto</h2>
+    <h2>Cadastrar Produto</h2>
 
     <?php if (isset($mensagem)) { ?>
         <p><?php echo $mensagem; ?></p>
@@ -46,17 +46,17 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <form action="cadastrar.php" method="POST">
 
         <label>Nome:</label>
-        <input type="text" name="nome" placeholder="Ex: Faca de Cozinha"><br>
+        <input type="text" name="nome" placeholder="Ex: lápis"><br>
 
         <label>Descrição:</label>
-        <input type="text" name="descricao" placeholder="Ex.: Ótimo utencilio para amantes de cozinha que buscam mais facilidade e corte nos alimentos"><br>
+        <input type="text" name="descricao" placeholder="Ex: Lápis de alta qualidade, grafite bom e duradouro"><br>
 
         <label>Preço:</label>
-        <input type="text" name="preco" placeholder="Ex.: 10,50"><br>
+        <input type="text" name="preco" placeholder="Ex: 1,50"><br>
         
 
         <label>Quantidade:</label>
-        <input type="text" name="quantidade" placeholder="Ex.: 7">
+        <input type="text" name="quantidade" placeholder="Ex: 50">
 
         <button type="submit">Salvar</button>
 
