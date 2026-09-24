@@ -7,7 +7,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     $sql = "DELETE FROM produtos WHERE id = '$id'";
     mysqli_query($conexao, $sql);
-
+    $_SESSION['mensagem'] = "Produto excluído com sucesso!";
+    header('Location: listar.php');
+    exit;
     header('Location: listar.php');
     exit;
 } else {
@@ -18,7 +20,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 }
 ?>
 
-
 <?php require __DIR__ . '/../cabecalho.php'; ?>
 
 <main>
@@ -28,8 +29,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     <form action="excluir.php" method="POST">
         <input type="hidden" name="id" value="<?php echo $produto['id']; ?>">
-        <button class="btn-apagar" type="submit">Sim, excluir</button>
-        <a class="btn-cadastrar" href="listar.php">Cancelar</a>
+        <button type="submit">Sim, excluir</button>
+        <button type="submit"><a href="listar.php">Cancelar</a></button>
+        
     </form>
 </main>
 
