@@ -8,11 +8,18 @@ header {
     color: white;
     padding: 15px 30px;
 }
-header nav a {
+ nav a {
     color: white;
     margin-right: 15px;
     text-decoration: none;
 }
+
+a{
+    text-decoration: none;
+    margin: 0;
+    color: white;
+}
+
 main {
     padding: 20px 30px;
 }
@@ -43,7 +50,7 @@ form input {
     box-sizing: border-box;
 }
  
-form button {
+ button {
     margin-top: 15px;
     padding: 8px 16px;
     background-color: #5f021f;
@@ -63,14 +70,15 @@ form {
 table {
  width: 100%;
  border-collapse: collapse;
- background-color: white;
- margin-top: 15px;
+ border-spacing: 0;
+margin: 15px auto;
 }
 
 table th, table td {
  border: 1px solid #ddd;
  padding: 8px;
  text-align: left;
+ background-color: white;
 }
 
 table th {

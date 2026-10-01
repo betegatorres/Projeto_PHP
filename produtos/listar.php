@@ -16,7 +16,7 @@ $resultado = mysqli_query($conexao, $sql);
         <?php unset($_SESSION['mensagem']); ?>
     <?php } ?>
    
-    <a href="cadastrar.php"><button type="submit" class="Btlistar">Cadastrar novo produto</button></a>
+    <a href="cadastrar.php"><button type="submit" class="btn-cadastrar">Cadastrar novo produto</button></a>
 
     <table>
         <tr>
@@ -35,9 +35,9 @@ $resultado = mysqli_query($conexao, $sql);
             <td><?php echo $produto['quantidade']; ?></td>
             <td>
                 <a href="atualizar.php?id=<?php echo $produto['id'];
-            ?>"><button type="submit" class="Btlistar">Editar</button></a>
+            ?>"><button type="submit" class="btn-editar">Editar</button></a>
                     <a href="excluir.php?id=<?php echo $produto['id'];
-            ?>"><button type="submit" class="Btlistar">Excluir</button></a>
+            ?>"><button type="submit" class="btn-excluir">Excluir</button></a>
                         </td>
                     </tr>
                 <?php } ?>
